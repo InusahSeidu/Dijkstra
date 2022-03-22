@@ -1,0 +1,30 @@
+
+Problem Description/Specification:
+    Create a program with the provided specification files that can use those files to create methods that read external files,
+    interpret the data and use the user input to implement Dijkstras shortest distance algorithm. 
+
+Client Algorithm:
+    The algorithm of the client file has access to background methods created in the specification file. The client files main 
+    algorithm deals with actually finding the external file and the functions used to interpret the data.The Graph class contains 
+    methods such as addVertex, IsMarked, IsEmpty, and IsFull. 
+
+Dijkstra's Algorithm:
+    Dijkstra's Algorithm is known as the best (greedy) search algorithm with a run time of O(E log v) for all cases. Simply, it 
+    is used to find the shortest paths betweeen each vertex in a graph and is commonly used in GPS. A table is a common representation 
+    of the implementation of the algorithm to visually show the algorithms implementation on each set of data. The algorithm focuses on 
+    the name of the vertex, the shortest distance to get to that vertex, and the vertex that was visited before it. The distance to each vertex is integral to 
+    find the shortest path. The algorithm checks all possible connected vertices and adds the distance from the previous vertex to get the total/shortest
+    distance to each vertex
+
+    An example of Dijkstra's algorithm implemented on travel between US Cities:
+
+        Vertex          Marks           Distance          Previous
+        -------------------------------------------------------------
+        Washington       T_0                0              -
+        ATL              T_1              600              Washington 
+        Austin           T_4             1500              Dallas     
+        Dallas           T_2             1300              Washington     
+        Denver           T_5             3080              Dallas   
+        Houston          T_3             1400              ATL   
+        Chicago          T_6             2200              Dallas   
+
